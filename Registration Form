@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zero Budget Club - Free Website Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+
+<!-- Start Contact Section -->
+ <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+  <div class="w3-content" style="max-width:600px">
+    <h4 class="w3-center"><b>Register Here</b></h4>
+
+    <script type="text/javascript">var submitted=false;</script>
+    
+    <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='https://www.tecnotips.org';}"></iframe> 
+    
+    <!-- Update the Google forms URL in action-->
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdjr_bUat7i4mZfgAHm5PgNgKXR9rD9ceZMctuH9--rsr3ygQ/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+      
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.1244131203">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.262190527">
+      </div>
+      <div class="w3-section">
+        <label>Phone No.</label>
+        <input class="w3-input w3-border" type="text" placeholder="Phone No." id="phone no" required name="entry.1715466067">
+      </div>
+      <div class="w3-section">
+        <label>Designation</label>
+        <input class="w3-input w3-border" type="text" placeholder="Designation" id="designation" required name="entry.1747804795">
+      </div>
+      <div class="w3-section">
+        <label>Grade Pay</label>
+        <input class="w3-input w3-border" type="number" placeholder="Grade Pay" id="grade pay" required name="entry.959879485">
+      </div>
+      <div class="w3-section">
+        <label>Place of Posting</label>
+        <input class="w3-input w3-border" type="text" placeholder="Place of Posting" id="place of posting" required name="entry.1492817540">
+      </div>
+      <div class="w3-section">
+        <label>Division</label>
+        <input class="w3-input w3-border" type="text" placeholder="Division" id="division" required name="entry.1614128339">
+      </div>
+      <div class="w3-section">
+        <label>Wanted Post</label>
+        <input class="w3-input w3-border" type="text" placeholder="Wanted Post" id="wanted post" required name="entry.675782881">
+      </div>
+        <div class="w3-section">
+        <label>Wanted Place of Posting</label>
+        <input class="w3-input w3-border" type="text" placeholder="Wanted Place of Posting" id="wanted place of posting" required name="entry.22711953">
+      </div>
+      <div class="w3-section">
+        <label>Wanted Division</label>
+        <input class="w3-input w3-border" type="text" placeholder="Wanted Division" id="wanted division" required name="entry.1426932953">
+      </div>
+      <div class="w3-section">
+        <label>Remarks if any</label>
+        <input class="w3-input w3-border" type="text" placeholder="Remarks if any" id="remarks if any" required name="entry.363616293">
+      </div>
+
+
+      <div class="w3-section">
+        <button class="w3-button w3-block w3-black w3-margin-bottom" type="submit">SEND</button>
+      </div>
+    </form>
+</div>
+</div>
+     <script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+        function validateDesignation() {
+            var name = document.getElementById('designation').value;
+            if(name.length == 0) {
+              alert("Designation can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct designation") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+       function validateGrade Pay() {
+            var Gradepay = document.getElementById('number').value;
+            if(phone.length == 0) {
+              alert("Grade Pay number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!number.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct grade pay") ;//Validation Message
+             return true;
+           }
+
+           return true;
+
+         }
+ function validatePlace of Posting() {
+            var name = document.getElementById('posting').value;
+            if(name.length == 0) {
+              alert("Place of Posting can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct Place of Posting") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+       
+       function validateDivision() {
+            var name = document.getElementById('division').value;
+            if(name.length == 0) {
+              alert("Division can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct Division") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+       function validateWanted Post() {
+            var name = document.getElementById('wanted post').value;
+            if(name.length == 0) {
+              alert("Wanted Post can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct Wanted Post") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+       function validateWantedPlace of Posting() {
+            var name = document.getElementById('posting').value;
+            if(name.length == 0) {
+              alert("Wanted Place of Posting can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct Wanted Place of Posting") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+       
+       function validateWanted Division() {
+            var name = document.getElementById('wanteddivision').value;
+            if(name.length == 0) {
+              alert("Wanted Division can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct Wanted Division") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+       function validateRemarks if any() {
+            var name = document.getElementById('remarksifany').value;
+            if(name.length == 0) {
+              alert("Remarks if any can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Remarks if any enter your correct Wanted Division") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail() || !validateDesignation() || !validateGrade Pay() || !validatePlace of Posting() || !validateDivision() || !validateWanted Post() || !validateWanted Place of Posting() || !validateWanted Division() || !validateWanted Remarks if any()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+            return true;
+          }
+        }
+        </script>
+<!-- End Contact Section -->
+            
+</body>
+</html>
